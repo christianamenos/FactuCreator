@@ -1,0 +1,287 @@
+
+/* ===== Primary Styles ========================================================
+   Author: Christian Amenós
+   ========================================================================== */
+
+.required::before {
+  content: "(*) ";
+}
+
+.hidden{
+  display: none;
+}
+
+tr:nth-child(even){
+  background-color: #ddd;
+}
+
+th, td{
+  padding: 1px 10px;
+  text-align: center;
+}
+
+th, td{
+  border-right: 1px solid black;
+}
+
+th:last-child{
+  border-right: none;
+}
+
+td{
+  border-top: 1px solid black;
+}
+
+td:last-child{
+  border-right: none;
+}
+
+.data-ok-message{
+  border: 2px solid green;
+  padding: 10px;
+  text-align: center;
+}
+
+.data-ko-message{
+  border: 2px solid crimson;
+  padding: 10px;
+  text-align: center;
+}
+
+ul.view-company-details{
+  list-style: none;
+}
+
+ul.view-company-details strong{
+  display: inline-block;
+  width:25%;
+}
+
+ul.view-company-details li:nth-child(even){
+  background-color: #ddd;
+}
+
+ul.view-company-details img{
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.right{
+  float:right;
+}
+
+#product_service_container th{
+  width: auto;
+}
+
+#product_service_container td{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#product_service_container td:first-child{
+  text-align: left;
+}
+
+#bill-form h3{
+  margin-bottom: 15px;
+}
+
+.add-elem-form{
+  padding-top:10px;
+  background-color: white;
+  border-top:none;
+}
+
+#non-products-info{
+  font-style: italic;
+  border-bottom: 1px solid black;
+}
+
+#add-item-to-bill td{
+  text-align: center !important;
+}
+
+#non-products-info td{
+  /*background-color: darkorange;*/
+  background-color: white;
+  color: #999;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align: center !important;
+}
+
+.clickable{
+  cursor:pointer;
+}
+
+.popup-opacdiv{
+  position:absolute;
+  opacity:0.4;
+  filter:alpha(opacity=40);
+  left:0;
+  background-color: black;
+  width:100%;
+  height:100%;
+  z-index: 1040;
+}
+
+.popup-form-wrapper{
+  position:absolute;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: 1041;
+}
+
+.popup-form{
+  color:menutext;
+  margin:auto; 
+  margin-top: 55px;
+  background-color: lightskyblue;
+  width:400px;
+  max-height:500px;
+  min-height:50px;
+  overflow:auto;
+  padding:20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border:1px solid #333;
+  -moz-box-shadow: 0px 0px 15px 1px #000;
+  -webkit-box-shadow: 0px 0px 15px 1px #000;
+  box-shadow: 0px 0px 15px 1px #000;
+}
+
+.popup-form textarea{
+    width:380px;
+    resize: none;
+}
+
+.popup-form-title{
+  color:menutext;
+  margin-bottom: 10px;
+}
+
+.popup-form-close{
+  position:relative;
+  top:0px;
+  right:-218px;
+  background-color: crimson;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  border-radius: 15px;
+  padding:5px 10px;
+  width:8px;
+  margin: 40px auto -75px auto;
+}
+
+.popup-form-close a{
+  color: white;
+  font-weight: bold;
+}
+
+/*
+.datepicker-days{
+  padding: 2px 5px;
+}
+
+.datepicker-days th, .datepicker-days td {
+  border: 1px solid white;
+}
+
+.datepicker-days .new, .datepicker-days .old{
+  color: #999;  
+  background-color: white;
+}
+
+.datepicker-days thead tr:first-child th{
+  border: none;
+}
+
+.datepicker-days .dow{
+  background-color: white;
+}
+*/
+
+
+#ui-datepicker-div td, #ui-datepicker-div th{
+  padding: 1px 5px;
+}
+
+#ui-datepicker-div{
+  background-color: white;
+  padding: 5px 10px;
+  border: 1px solid black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border:1px solid #333;
+  -moz-box-shadow: 0px 0px 15px 1px #000;
+  -webkit-box-shadow: 0px 0px 15px 1px #000;
+  box-shadow: 0px 0px 15px 1px #000;
+}
+
+.ui-datepicker-today{
+  background-color: lightblue;
+  font-weight: bold;
+}
+
+.ui-datepicker-current-day{
+  background-color: palevioletred;
+  font-weight: bold;
+}
+
+.ui-datepicker-current-day a{
+  color: white;
+}
+
+ul{
+    list-style: none;
+    margin: 10px;
+}
+
+li{
+    line-height: 1.8em;
+}
+
+h4{
+    margin: 10px 0;
+}
+
+#bill-body table{border:1px solid black;}
+#bill-body th{border:1px solid black; background-color: lightslategrey; color:white;}
+#bill-body .total th, #bill-body .total-vat th, #bill-body .total-with-vat th{text-align: left; border-right:none;}
+.total td, .total-vat td, .total-with-vat td{background-color: lightslategrey; color:white; font-weight:bold; border-left: none;}
+
+#bill-sender-logo{float:right; margin-right:100px;}
+#bill-sender-logo img{max-width:300px; max-height:300px;}
+
+.left-align{
+    text-align: left;
+}
+
+td{
+    padding: 6px 10px 6px 10px;
+}
+
+th{
+    padding: 6px 10px;
+}
+
+.icon-go-down{
+    position:relative;
+    bottom: -4px;
+}
+
+.fright{
+    float:right;
+}
+
+.bottom-space{
+    margin-bottom: 10px;
+    display: inline-block;
+}
